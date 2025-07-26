@@ -16,10 +16,13 @@ gtag("config", "G-PDQB7RGDTD");
 <script>
 function trackCTA(){
 	// 送出事件紀錄
-	gtag("event", "分享", {
+	//紀錄事件名稱
+	gtag("event", "文章分享", {
+	        //紀錄其他參數
 		"platform":"Facebook",
 		"title":"如何使用 GA",
-		"value": 1
+		"value": 1,
+		"abc":"test"
 	});
 	alert("Event Sent!");
 }
